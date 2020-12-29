@@ -1,0 +1,42 @@
+<div class="container">
+  <div>
+    <h2>
+      Create a new post :
+    </h2>
+  </div>
+  <form>
+    <!-- <div class="col-sm-2 col-md-2 col-lg-2">
+      <label for="">
+        PostID :
+      </label>
+      <input type="text" [(ngModel)]="newPost.idPost" name="idPost" class="form-control">
+    </div> -->
+    <div class="col-sm-2 col-md-2 col-lg-2">
+      <label for="">
+        Title :
+      </label>
+      <input type="text" [(ngModel)]="newPost.title" name="title" class="form-control">
+    </div>
+    <div class="col-sm-2 col-md-2 col-lg-2">
+      <label for="">
+        Body :
+      </label>
+      <textarea name="Body" cols="30" rows="10" [(ngModel)]="newPost.body"></textarea>
+    </div>
+    <div class="col-sm-2 col-md-2 col-lg-2">
+      <label for="">
+        Author :
+      </label>
+      <input type="text" [(ngModel)]="newPost.author" name="author" class="form-control">
+    </div>
+    <div class="col-sm-2 col-md-2 col-lg-2">
+      <label for="">
+        Creation Date :
+      </label>
+      <input type="date" [(ngModel)]="newPost.createdAt" name="createdAt" class="form-control">
+    </div>
+    <div class="mt-2">
+      <input type="button" (click)="addPost()" value="Create" class="btn btn-success">
+    </div>
+  </form>
+</div>
